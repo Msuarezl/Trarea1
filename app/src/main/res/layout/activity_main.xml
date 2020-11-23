@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="126dp"
+        android:layout_height="59dp"
+        android:layout_x="25dp"
+        android:layout_y="426dp"
+        android:rotationX="-4"
+        android:text="Telefono"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="191dp"
+        android:layout_y="432dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <TextView
+        android:layout_width="126dp"
+        android:layout_height="59dp"
+        android:layout_x="9dp"
+        android:layout_y="120dp"
+        android:rotationX="-4"
+        android:text="Nombre"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="189dp"
+        android:layout_y="118dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <EditText
+        android:id="@+id/txtNacimiento"
+        android:layout_width="163dp"
+        android:layout_height="35dp"
+        android:layout_x="226dp"
+        android:layout_y="369dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="112dp"
+        android:layout_height="45dp"
+        android:layout_x="22dp"
+        android:layout_y="237dp"
+        android:text="Genero"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="265dp"
+        android:layout_x="6dp"
+        android:layout_y="365dp"
+        android:text="Fecha de Nac"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="-12dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="165dp"
+        android:layout_height="77dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="83dp"
+        android:layout_x="122dp"
+        android:layout_y="554dp"
+        android:text="Enviar"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp"
+        app:iconTint="#FFFFFF"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="426dp"
+        android:onClick="btnEnviar"
+
+        />
+
+
+    <RadioGroup
+        android:id="@+id/opciones_sexo"
+        android:layout_width="210dp"
+        android:layout_height="113dp"
+        android:layout_x="177dp"
+        android:layout_y="202dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbdFemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="222dp"
+            android:layout_y="283dp"
+            android:checked="false"
+            android:text="Femenino" />
+
+        <RadioButton
+            android:id="@+id/rbdMAsculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="223dp"
+            android:layout_y="218dp"
+            android:checked="true"
+            android:text="Maculino" />
+    </RadioGroup>
+
+
+</AbsoluteLayout>
